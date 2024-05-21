@@ -5,10 +5,6 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-      'neuemontreal': ['Neue Montreal', 'sans-serif'],
-      'foundersgrotesk': ['Founders Grotesk', 'sans-serif'],
-    },
   },
   plugins: [],
 }
