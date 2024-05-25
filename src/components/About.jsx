@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="font-['Neue_Montreal'] rounded-2xl bg-[#CDEA68]">
+    <div data-scroll data-scroll-section data-scroll-speed='-0.5' className="font-['Neue_Montreal'] rounded-2xl bg-[#CDEA68]">
       <h1 className="px-14 pt-20 pb-14 text-[3.6vw] tracking-tight text-[#212121] leading-none w-[85%]">
         Ochi is a strategic partner for fast-growing tech businesses that need
         to raise funds, sell products, explain complex ideas, and hire great
@@ -30,10 +30,9 @@ function About() {
           <h4 className="flex flex-col">
             <p className="mb-6">S:</p>
             <p className="flex flex-col">
-              <a href="">Instagram</a>
-              <a href="">Behance</a>
-              <a href="">Facebook</a>
-              <a href="">Linkedin</a>
+              {["Instagram","Behance","Facebook","LinkedIn"].map((item,index)=>(
+                <a key="" href="">{item}</a>
+              ))}
             </p>
           </h4>
         </div>

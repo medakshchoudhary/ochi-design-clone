@@ -16,7 +16,7 @@ function Navbar() {
         {["Services","Our work","About us","Insights","Contact us"].map((item,index)=>(
           // add dynamic js using jsx to print the elements using ternary operator
           // instead of ? we used && so only one thing will be executed no ned for a if false
-          <a key={index} className={`text-base tracking-wider font-normal leading-7 ${index === 4 && "ml-48"}`}>{item}</a>
+          <a href="" key={index} className={`text-base tracking-wider font-normal leading-7 ${index === 4 && "ml-48"}`}>{item}</a>
         ))}
       </div>
     </div>
